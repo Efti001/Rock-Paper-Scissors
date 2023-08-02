@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #ecebeb;
 }
 
 header{
@@ -43,6 +44,7 @@ header h1{
     font-size: 30px;
     width: 500px;
     height: 500px;
+    box-shadow: 0 0 3px black;
 }
 .choices{
 
@@ -98,26 +100,35 @@ header h1{
     font-family: 'Nanum Pen Script', sans-serif;
     
 }
-.player{
+
+.player, .computer {
     position: absolute;
-    top: 0;
-    left: 0;
     margin: -15px;
+    top: 0;
+    border-radius: 5px;
 }
 
-.computer{
-    position: absolute;
-    margin: -15px;
-    top: 0;
+.player {
+    left: 0;
+}
+
+.computer {
     right: 0;
 }
 
 button{
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
     background-color: white;
-    border: 2px solid black;
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+    border: 5px solid black;
     border-radius: 5px;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
     cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
 }
