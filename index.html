@@ -5,11 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissor</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h3>Rock Paper Scissor</h3>
-  </div>
+    <header>
+        <h1>
+            Rock Paper Scissor
+        </h1>
+    </header>
+
+    <div class="choices">
+        <div class="choice">
+            <img src="img/rock.png" alt="rock" width="100">
+        </div>
+        <div class="choice">
+            <img src="img/paper.png" alt="paper" width="100">
+        </div>
+        <div class="choice">
+            <img src="img/scissor.png" alt="scissor" width="100">
+        </div>
+    </div>
+    <div class="rules">
+        <p>Rules:</p>
+        <ul>
+            <li>Rock beats Scissor</li>
+            <li>Paper beats Rock</li>
+            <li>Scissor beats Paper</li>
+        </ul>
+    </div>
+    <div class="scoreboard">
+        <div id="player">Player</div>
+        <div id="computer">Computer</div>
+        <span id="player-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="button">
+        <button id="restart">Restart</button>
+    </div>
 </body>
 </html>
