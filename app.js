@@ -102,7 +102,6 @@ function restart() {
   compSB.textContent = compScore;
 }
 
-
 main();
 
 
