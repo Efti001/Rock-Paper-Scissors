@@ -45,6 +45,7 @@ header h1{
     width: 500px;
     height: 500px;
     box-shadow: 0 0 3px black;
+    outline: 10px dashed black;
 }
 .choices{
 
